@@ -10,7 +10,7 @@ public class CreateTable {
 	public static void main(String[] args) {
 		try {
 //			1. Establish the connection with database
-			Connection con = DriverManager.getConnection("jdbc:h2:~/test", "sa", "");
+			Connection con =  DbUtil.getCon();
 //			2. Create statement/command
 			Statement stmt = con.createStatement();
 //			3. execute the command

@@ -9,7 +9,7 @@ public class InsertIntoUser {
 
 	public static void main(String[] args) {
 		try {
-			Connection con = DriverManager.getConnection("jdbc:h2:~/test", "sa", "");
+			Connection con = DbUtil.getCon();
 			Statement stmt = con.createStatement();
 			int retVal = stmt.executeUpdate("INSERT INTO JM2008_USER VALUES(0, 'Atul Dwivedi')");
 			if (retVal > 0) {

@@ -9,7 +9,7 @@ public class DeleteUser {
 
 	public static void main(String[] args) {
 		try {
-			Connection con = DriverManager.getConnection("jdbc:h2:~/test", "sa", "");
+			Connection con =  DbUtil.getCon();
 			Statement stmt = con.createStatement();
 			int retVal = stmt.executeUpdate("DELETE FROM JM2008_USER WHERE ID = 0");
 			if (retVal > 0) {
