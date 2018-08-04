@@ -15,6 +15,7 @@ public class InsertIntoUser {
 			Statement stmt = con.createStatement();
 			int retVal = stmt.executeUpdate("INSERT INTO JM2008_USER VALUES(0, 'Atul Dwivedi')");
 			if (retVal > 0) {
+				System.out.println(retVal);
 				System.out.println("Record has been inseted successfully.");
 			}
 		} catch (SQLException e) {
