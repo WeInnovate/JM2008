@@ -1,9 +1,11 @@
-package com.jm2008.learn.jdbc;
+package com.jm2008.learn.jdbc.dml.stmt;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
+
+import com.jm2008.learn.jdbc.util.DbUtil;
 
 public class UpdateUser {
 

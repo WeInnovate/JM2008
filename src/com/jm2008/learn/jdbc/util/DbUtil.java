@@ -1,4 +1,4 @@
-package com.jm2008.learn.jdbc;
+package com.jm2008.learn.jdbc.util;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
