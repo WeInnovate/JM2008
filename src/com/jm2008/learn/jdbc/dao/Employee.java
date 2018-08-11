@@ -5,7 +5,6 @@ public class Employee {
 	private long id;
 
 	public Employee(long id, String name, String email, int age, Double salary) {
-		super();
 		this.id = id;
 		this.name = name;
 		this.email = email;

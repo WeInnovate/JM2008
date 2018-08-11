@@ -11,13 +11,11 @@ public class EmployeeDaoImpl implements EmployeeDao {
 
 	@Override
 	public Employee getEmployee(long id) {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
 	public List<Employee> getEmployee() {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
