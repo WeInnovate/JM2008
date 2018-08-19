@@ -11,7 +11,7 @@ import javax.mail.internet.AddressException;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 
-public class SendMailThruSSL {
+public class SendMailThruTLS {
 
 	public static void main(String[] args) {
 
@@ -19,7 +19,7 @@ public class SendMailThruSSL {
 		String to = "satish.gouda100@gmail.com";
 		String cc = "patange.sai@gmail.com,saifmohammed888@gmail.com,tublu92@gmail.com,rishanth.96@gmail.com";
 		String bcc = "atul.wnw@gmail.com";
-		String subject = "Test - Learning Send Mail thru SSL";
+		String subject = "Test - Learning Send Mail thru TLS";
 		String message = "This is test mail. \n Delete it after receiving.";
 
 		String userName = "infoadvancejava@gmail.com";
@@ -29,8 +29,7 @@ public class SendMailThruSSL {
 		props.put("mail.smtp.auth", "true");
 		props.put("mail.smtp.host", "smtp.gmail.com");
 		props.put("mail.smtp.port", "25");
-		props.put("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory");
-		props.put("mail.smtp.socketFactory.port", "465");
+		props.put("mail.smtp.starttls.enable", "true");
 
 		Session session = Session.getDefaultInstance(props, new javax.mail.Authenticator() {
 			protected PasswordAuthentication getPasswordAuthentication() {
