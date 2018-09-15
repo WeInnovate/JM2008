@@ -1,7 +1,6 @@
 package com.jm2008.learn.servlet;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -32,6 +31,7 @@ public class LoginServlet extends HttpServlet {
 		if (username.equalsIgnoreCase(password)) {
 //			PrintWriter out = response.getWriter();
 //			out.println("Hello, " + username);
+			request.setAttribute("msg", "Login Successfull!!");
 			RequestDispatcher rd = request.getRequestDispatcher("profile");
 			rd.forward(request, response);
 		} else {
