@@ -18,11 +18,13 @@ public class RegisterServlet extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		System.out.println("RegisterServlet: doGet");
 		response.sendRedirect("registration.html");
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		System.out.println("RegisterServlet: doPost");
 		response.setContentType("text/HTML");
 		String name = request.getParameter("name");
 		String email = request.getParameter("email");
