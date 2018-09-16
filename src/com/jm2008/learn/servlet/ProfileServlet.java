@@ -23,6 +23,9 @@ public class ProfileServlet extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		request.setAttribute("msg", "Login Successfull!!!");
+		request.setAttribute("temp", "Remove it");
+		request.removeAttribute("temp");
 		System.out.println("Profile doPost()");
 		String username = request.getParameter("username");
 		PrintWriter out = response.getWriter();

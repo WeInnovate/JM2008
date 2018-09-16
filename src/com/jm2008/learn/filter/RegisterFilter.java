@@ -12,7 +12,7 @@ import javax.servlet.annotation.WebFilter;
 /**
  * Servlet Filter implementation class RegisterFilter
  */
-@WebFilter("/register")
+@WebFilter(urlPatterns = {"/register"/*, "/login"*/})
 public class RegisterFilter implements Filter {
 
     /**
