@@ -8,6 +8,7 @@
 	integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
 	crossorigin="anonymous">
 <meta charset="ISO-8859-1">
+<%@ page errorPage="fail.jsp" %>
 <title>Login Page</title>
 </head>
 <body>
@@ -30,6 +31,9 @@
   </div>
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
+<%-- <%
+int i = 10/0;
+%> --%>
 </div>
 </body>
 </html>
