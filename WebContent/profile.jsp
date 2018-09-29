@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
+<%-- 	<%@ page isELIgnored="true" %> --%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,11 +23,11 @@
 			<tbody>
 				<tr>
 					<td>Name</td>
-					<td><%=request.getParameter("username")%></td>
+					<td>${param.username}</td>
 				</tr>
 				<tr>
 					<td>Message</td>
-					<td><%=request.getAttribute("msg")%></td>
+					<td>${requestScope.msg}</td>
 				</tr>
 			</tbody>
 		</table>

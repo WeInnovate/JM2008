@@ -12,7 +12,7 @@
 </head>
 <body>
 <div class="container">
-		<form action="process-registration.jsp" method="post">
+		<form action="${pageContext.request.contextPath}/process-registration.jsp" method="post">
 			<table class="table table-striped">
 				<thead>
 					<tr>
