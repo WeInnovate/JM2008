@@ -9,7 +9,8 @@
 <body>
 	<a href="index.jsp">Home</a> |
 	<a href="login.jsp">Login</a> |
-	<a href="registration.jsp">Registration</a>
+	<a href="registration.jsp">Registration</a> |
+	<a href="jstl.jsp">JSTL</a>
 	<hr />
 </body>
 </html>

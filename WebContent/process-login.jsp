@@ -1,4 +1,4 @@
-
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%
 	String userName = request.getParameter("username");
 	String password = request.getParameter("password");
@@ -8,6 +8,9 @@
 		RequestDispatcher rd = request.getRequestDispatcher("profile.jsp");
 		rd.forward(request, response);
 	} else {
-		response.sendRedirect("login.jsp?msg=Login+Failed");
+		%>
+		<c:redirect url="login.jsp?msg=Login+Failed" />
+		<!-- response.sendRedirect("login.jsp?msg=Login+Failed"); -->
+		<%
 	}
 %>

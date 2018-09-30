@@ -31,6 +31,11 @@
 		list.add("Guava");
 		out.print(list);
 	%>
+	
+	<hr />
+	<br>${param.name }
+	<br>${param.percentage }
+	<br>${param.key }
 
 	<%-- <%
 		int i = 10 / 0;

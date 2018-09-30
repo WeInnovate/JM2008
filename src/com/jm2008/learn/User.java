@@ -94,6 +94,20 @@ public class User {
 		this.type = type;
 	}
 
+	public User(String name, String email, String mobile, int age, String gender, String[] courses, String city,
+			String comment, String type) {
+		super();
+		this.name = name;
+		this.email = email;
+		this.mobile = mobile;
+		this.age = age;
+		this.gender = gender;
+		this.courses = courses;
+		this.city = city;
+		this.comment = comment;
+		this.type = type;
+	}
+
 	@Override
 	public String toString() {
 		return "User [name=" + name + ", email=" + email + ", mobile=" + mobile + ", age=" + age + ", gender=" + gender
